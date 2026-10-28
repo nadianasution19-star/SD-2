@@ -2,8 +2,7 @@
 #include <vector>
 using namespace std;
 
-// Fungsi Bergabung Kembali
-// Menggabungkan dua bagian terurut: arr[left..mid] dan arr[mid+1..right]
+// TODO : Fungsi Bergabung Kembali
 void merge(vector<int>& arr, int left, int mid, int right) {
     int n1 = mid - left + 1;   // ukuran bagian kiri
     int n2 = right - mid;      // ukuran bagian kanan
@@ -44,8 +43,7 @@ void merge(vector<int>& arr, int left, int mid, int right) {
     }
 }
 
-// Memecah Barisan
-// Membagi array menjadi dua bagian secara rekursif, lalu menggabungkannya
+// TODO : Memecah Barisan
 void mergeSort(vector<int>& arr, int left, int right) {
     if (left < right) {
         int mid = left + (right - left) / 2;  // hindari overflow
